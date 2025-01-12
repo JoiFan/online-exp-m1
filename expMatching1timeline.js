@@ -1364,7 +1364,7 @@ for (
 
 main_timeline.push(instruction2);
 
-num_blocks = mat_formal.length;
+num_blocks = 5//mat_formal.length;
 attention_trial_index = 0;
 rest_index = [6,19,31,44,56,69,81,94,106,119];;
 for (let trial_index = 0; trial_index < num_blocks; trial_index++) {
