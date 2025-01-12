@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>损失决策线上实验-v2</title>
+
+    <script src="https://www.naodao.com/public/experiment/libs/jspsych-7/jspsych.js"></script>
+    <link rel="stylesheet" href="https://www.naodao.com/public/experiment/libs/jspsych-7/css/jspsych.css">
+
+
+    <script src="https://www.naodao.com/public/experiment/libs/plugin/plugin-cloze.js"></script>
+    <script src="https://www.naodao.com/public/experiment/libs/plugin/plugin-survey-text.js"></script>
+    <script src="https://www.naodao.com/public/experiment/libs/plugin/plugin-html-keyboard-response.js"></script>
+    <script src="https://www.naodao.com/public/experiment/libs/plugin/plugin-fullscreen.js">   </script>
+
+
+    <script src="https://www.naodao.com/public/experiment/libs/axios.min.js"></script>
+
+    <style>
+      .paragraph {width: 57%;text-align: left;text-indent: 2em;}
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 动态加载 JavaScript 文件的脚本 -->
+    <script>
+      // 生成一个 0 到 1 之间的随机数
+      var randomNumber = Math.random();
+
+      // 创建一个新的 script 元素
+      var script = document.createElement('script');
+
+      // 根据随机数决定加载哪个 JavaScript 文件
+      // if (randomNumber < 0.20) {
+          script.src = 'expMatching1timeline.js'; 
+      // } else if (randomNumber < 0.60) {
+          // script.src = 'expMatching2timeline.js'; 
+      // } else {
+          // script.src = 'expEvaluationtimeline.js'; 
+      // }
+
+      // 将新的 script 元素添加到文档中
+      document.body.appendChild(script);
+
+    </script>
+  </body>
+
+</html>
